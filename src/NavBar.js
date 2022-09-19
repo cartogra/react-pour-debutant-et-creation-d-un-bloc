@@ -1,14 +1,15 @@
 const NavBar = () => {
     return (  
         <nav className="NavBar">
-            <div><a href="">blog djougue</a>
+            <div>
+                <a className="logo" href="">blog djougue</a>
             </div>
-            <ul className="lien">
+            <ul className="liens">
                 <li>
                     <a href="" className="lien">acceuill</a>
                 </li>
                 <li>
-                    <a href="" className="lien">creer article</a>
+                    <a href="" className="buttonArticle" >creer article</a>
                 </li>
                 
             </ul>
