@@ -27,10 +27,14 @@ const [blogs, setBlog] = useState([
     date: "19/09/2022"
   },
 ]);
+const handleDelete= (id) => {
+    const newBlogs= blogs.filter( (blog) => blog.id !== id);
+    setBlog(newBlogs);
 
+ }
     return ( 
         <div className="home">
-           <BlogList blogs={blogs} title={'liste des blogs'}/>
+           <BlogList blogs={blogs} title={'liste des blogs'} handleDelete={handleDelete}/>
            <BlogList blogs={blogs.filter ((blog)  =>blog.author === 'christelle')} title={'liste des blogs publier par christelle'}/>
         </div>
      );
