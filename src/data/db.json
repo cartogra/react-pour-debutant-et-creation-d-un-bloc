@@ -1,0 +1,18 @@
+{
+  "blogs":[
+    {
+        "id":1,
+        "title": "bienvenu a mon blog.",
+        "body": "a dui. cras pellentesque. sed dictum. proin eget odio", 
+        "author": "djougue",
+        "date": "19/09/2022"
+    },
+    {
+        "id":2,
+        "title": "j'apprend a coder",
+        "body": "cursus vestibulum. mauris magna. duis dignissin temporq",
+        "author": "christelle",
+        "date": "19/09/2022"
+    }
+]
+}
