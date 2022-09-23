@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 import Add from './Add';
 import BlogDetail from './BlogDetail';
-
+import NotFound from  './NotFound';
 function App() {
 
   return (
@@ -18,11 +18,12 @@ function App() {
       <div className="App">
         <NavBar/>
         <div className='contenu'>
-          
+       
               <Routes>
                 <Route path="/" element={<Home />}/>
                 <Route path="/Add" element={<Add />}/>
                 <Route path="/blogs/:id" element={<BlogDetail />}/>
+                <Route path="*" element={<NotFound />}/>
               </Routes>
          
         </div>

@@ -5,6 +5,7 @@ import useFetch from "./useFetch";
 const Home = () => {
 
 const{data:blogs, isLoading, error} = useFetch('http://localhost:5500/src/data/db.json');
+
     return ( 
         <div className="home">
             {error && <div>{error}</div>}
