@@ -9,8 +9,8 @@ const BlogList = ({blogs, title, handleDelete}) => {
             <h3>{title}</h3>
         {
             blogs.map( (blog) => (
-            <div className="blog" key={blog.id}>
-                <Link to={'/blogs/{blog.id}'}  className="blog-titre">{blog.title}</Link>
+            <div className="blog" key= {blog.id}>
+                <Link to={`/blogs/${blog.id}`} className="blog-titre">{blog.title}</Link>
                 <small className="blog-publication-date">publier le: {blog.date}</small>
                 <p className="blog-author">publire par: {blog.author}</p>
                
